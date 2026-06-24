@@ -35,10 +35,65 @@ In developing countries and fashion-conscious communities, many individuals face
 ---
 
 ### 🛡️ **Admin**
-- Monitor platform activity including users, stylists, sessions, and payments.
+- Monitor platform activity, including users, stylists, sessions, and payments.
 - Create, edit, or delete users or stylists.
 - View and resolve system or user-reported issues.
 - Manage categories, settings, and platform policies.
+
+---
+## UML Diagram
+
+### Use Case Diagram
+  The main actors in our system are:
+- **Regular Users** - Gets Style Suggestions and Fixes Appointments with Stylists.
+- **Stylists** - Accepts and Conducts One-on-One Appointments with Regular Users.
+- **System Admin** - Manages users and monitors system activities.
+<div align="center">
+  <img src="docs/use-case.jpeg" alt="use_case_diagram" width="100%"><br/>
+  <p> <b>Use case diagram of our system</b></p>
+</div>
+
+### Activity Diagram
+
+#### Activity Flow for Regular Users
+
+<p align="center">
+    <img src="docs/user-flow.png" width="100% alt="User Flow Diagram">
+    <br />
+    <b>Activity Diagram for Regular Users</b>
+</p>
+
+
+##### Activity Flow for Stylist
+
+<p align="center">
+    <img src="docs/stylist-flow.png" width="100% alt="Activity Diagram for Delivery Rider">
+    <br />
+    <b>Activity Diagram for Stylists</b>
+</p>
+
+### Class Diagram
+
+#### Key Classes:
+1. **Users** (Base class for Regular Users, Stylists, and Admin).
+2. **NormalUserDetails** (Send the style suggestion and appointment request)
+3. **StylistDetails** (Accepts or rejects, and conducts appointment requests)
+4. **Admin** (Manages the system)
+5. **Appointments** (Represents an Appointment to be conducted).
+6. **Payment** (Handles transactions for confirming an appointment).
+7. **WardrobeItems** (Stores Regular Users' Personal Drip Collection).
+8. **Review** (Handles user ratings and feedback).
+
+
+
+
+### Entity-Relationship Database Diagram
+<p align="center">
+    <img src="docs/erd.png" width=100% alt="Class diagram convention">
+    <br />
+  <b>Initial ERD of the system</b>
+</p>
+The Entity-Relationship (ER) diagram above visually represents the database schema and relationships between tables.
 
 ---
 
@@ -51,7 +106,6 @@ In developing countries and fashion-conscious communities, many individuals face
 - **Map Integration**: Mapbox (for location-based store suggestions)  
 - **Payment Gateway**: Stripe / Razorpay (planned)
 
----
 
 ## 🚧 Status
 
