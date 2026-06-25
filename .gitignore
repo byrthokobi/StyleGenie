@@ -36,3 +36,11 @@ out/
 ### VS Code ###
 .vscode/
 .env
+
+.claude
+.agent
+.specsmd
+
+memory-bank
+
+node_modules
