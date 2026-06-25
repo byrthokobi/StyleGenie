@@ -40,3 +40,7 @@ out/
 .claude
 .agent
 .specsmd
+
+memory-bank
+
+node_modules
